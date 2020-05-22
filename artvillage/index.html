@@ -65,26 +65,25 @@
 
 <div id="section02">
 	<div class=swiper_box>
-		<div class="swiper-txt">
-			<p1>한옥마을 둘러보기</p1>
-		</div>
-		<div class="swiper-container">
+		<div class="swiper-container" id="swiper-container2" style="width:1100px;">
 			<div class="swiper-wrapper">
-				<div class="swiper-slide" id="slide1">
-					<p>한옥마을 전경</p>
-				</div>
-      			<div class="swiper-slide">Slide 2</div>
-				<div class="swiper-slide">Slide 3</div>
-      			<div class="swiper-slide">Slide 4</div>
-      			<div class="swiper-slide">Slide 5</div>
-      			<div class="swiper-slide">Slide 6</div>
-     			<div class="swiper-slide">Slide 7</div>
-     			<div class="swiper-slide">Slide 8</div>
-     			<div class="swiper-slide">Slide 9</div>
-     			<div class="swiper-slide">Slide 10</div>
+				<div class="swiper-slide active-slider" style="background: pink;">
+					slider1</div>
+				<div class="swiper-slide" style="background: #8acc7d;">
+					slider2</div>
+				<div class="swiper-slide" style="background: #b7cc7d;">
+					slider3</div>
+				<div class="swiper-slide" style="background: #9eb75c;">
+					slider4</div>
+				<div class="swiper-slide" style="background: #7da8cc;">
+					slider5</div>
+				<div class="swiper-slide" style="background: #9f7dcc;">
+					slider6</div>
+				<div class="swiper-slide" style="background: #96cc7d;">
+					slider7</div>
+				<div class="swiper-slide" style="background: #cc7dae;">
+					slider8</div>
 			</div>
-		<!-- Add Pagination -->
-		<div class="swiper-pagination">
 		</div>
 	</div>
 </div>	
@@ -105,7 +104,6 @@
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <script src="js/fontawesome.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
-<script src="../package/js/swiper.min.js"></script>
 <script src="js/swiper.min.js"></script>
 
 <script>
@@ -136,15 +134,12 @@
 </script>
 
 <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
-      centeredSlides: true,
-      spaceBetween: 30,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
+    var mySwiper2 = new Swiper('#swiper-container2', {
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
+        slidesPerView: 3
+
+    })
 </script>
 
 </body>
