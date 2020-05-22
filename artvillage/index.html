@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:image" content=""/> 
 <meta property="og:title" content=""/>
 <meta property="og:description" content=""/>
@@ -68,7 +69,25 @@
 
 <!-- <section02 -->
 
-<div id="section03"></div>
+<div id="section03">
+	<div class="swiper-container">
+    	<div class="swiper-wrapper">
+    		<div class="swiper-slide">Slide 1</div>
+      		<div class="swiper-slide">Slide 2</div>
+      		<div class="swiper-slide">Slide 3</div>
+      		<div class="swiper-slide">Slide 4</div>
+      		<div class="swiper-slide">Slide 5</div>
+      		<div class="swiper-slide">Slide 6</div>
+     		<div class="swiper-slide">Slide 7</div>
+     		<div class="swiper-slide">Slide 8</div>
+     		<div class="swiper-slide">Slide 9</div>
+     		<div class="swiper-slide">Slide 10</div>
+		</div>
+	<!-- Add Pagination -->
+	<div class="swiper-pagination">		
+	</div>
+</div>
+
 <!-- <section03 -->
 
 <div id="section04"></div>
@@ -80,6 +99,7 @@
 
 
 <script type="text/javascript" src="js/script.js"></script>
+<script src="../package/js/swiper.min.js"></script>
 
 <script>
 	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
@@ -107,5 +127,18 @@
 	   });
 	});
 </script>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      centeredSlides: true,
+      spaceBetween: 30,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+</script>
+
 </body>
 </html>
