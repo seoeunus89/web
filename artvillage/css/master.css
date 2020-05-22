@@ -165,7 +165,7 @@ li {
   height: 500px;
 }
 
-.swiper-slide {
+.swiper-slide{
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -174,7 +174,11 @@ li {
   align-items: center;
 }
 
-  
+#slide1{
+  background: url(../img/slider1.jpg) top center no-repeat;
+}
+
+
 .swiper-slide:nth-child(2n) {
   width: 50%;
 }
