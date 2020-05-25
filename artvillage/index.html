@@ -3,92 +3,54 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta property="og:image" content=""/> 
-<meta property="og:title" content=""/>
-<meta property="og:description" content=""/>
-<!-- <meta property="og:url" content="유알엘"/> -->
 
 <title>김포아트빌리지</title>
 
 <link rel="stylesheet" href="css/master.css">
 <link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/fontawesome.css">
 <link rel="stylesheet" href="css/swiper.min.css">
 
+<script src="http://code.jquery.com/jquery.min.js"></script>
 <!-- <style>
 *{list-style:none; margin:0; padding:0;}
 </style> -->
 
-<style>
-	.show{
-		display: block;
-		position: absolute;
-		top: 90px;
-		left: 70%;
-		background-color: rgba(100, 100, 100, 0.5);
-		width: 100%;
-	}
-
-</style>
-
 </head>
 
 <body>
-<div id="section01">
-    <div class="menu_box">
-		<div class="logo">
-			<img src="img/logo.png" id="logo">
-		</div>
-        <ul class="navi navigation" id="nav">
-            <li><a href="#section01">김포아트빌리지</a></li>
-            <li><a href="#section02">한옥마을</a></li>
-            <li><a href="#section03">창작스튜디오</a></li>
-            <li><a href="#section04">전시공연장</a></li>
-            <li><a href="#section05">오시는 길</a></li>
-		</ul>
-		<div class="menu_bar" id="btn-nav">
-			<i class="fas fa-bars"></i>
-		</div>
-	</div>
-	<!-- menu end -->
-	
-	<div class="main-txt-box">
-		<div class="main_txt">
-		<p>ART VILLAGE</p>
-		</div>
-		<div class="sub_txt">
-		<h1>전통문화예술을 품다. 아트빌리지</p>
-		</div>
-	</div>
-</div>
-<!-- <section01 -->
 
-<div id="section02">
-	<div class=swiper_box>
-		<div class="txt">
-			<p>전통한옥에서 숙박체험 할 수 있는 전통한옥숙박체험관, 전통예술체험공간, 놀이마당, 한복체험하는 한옥스튜디오, 김포문화원</p>
-		</div>
-		<div class="swiper-container" id="swiper-container2" style="width:900px;">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide active-slider" style="background: pink;">
-					slider1</div>
-				<div class="swiper-slide" style="background: #8acc7d;">
-					slider2</div>
-				<div class="swiper-slide" style="background: #b7cc7d;">
-					slider3</div>
-				<div class="swiper-slide" style="background: #9eb75c;">
-					slider4</div>
-				<div class="swiper-slide" style="background: #7da8cc;">
-					slider5</div>
-				<div class="swiper-slide" style="background: #9f7dcc;">
-					slider6</div>
-				<div class="swiper-slide" style="background: #96cc7d;">
-					slider7</div>
-				<div class="swiper-slide" style="background: #cc7dae;">
-					slider8</div>
+<div id="section01">
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide menu">
+				<ul class="navi navigation" id="nav">
+					<li><a href="#section01">김포아트빌리지</a></li>
+					<li><a href="#section02">한옥마을</a></li>
+					<li><a href="#section03">창작스튜디오</a></li>
+					<li><a href="#section04">전시공연장</a></li>
+					<li><a href="#section05">오시는 길</a></li>
+				</ul>
+			</div>
+			
+			<div class="swiper-slide content">
+				<div class="menu-button">
+					<img src="img/logo.png" id="logo">
+				</div>
+				<div class="main-txt-box">
+					<div class="main_txt">
+						<p>ART VILLAGE</p>
+					</div>
+					<div class="sub_txt">
+						<p>전통문화예술을 품다. 아트빌리지</p>
+					</div>
+				</div>	
 			</div>
 		</div>
-	</div>
+	</div>	
+</div>
+
+<div id="section02">
+	
 </div>	
 <!-- <section02 -->
 
@@ -104,25 +66,42 @@
 <!-- <section05 -->
 
 
-<script src="http://code.jquery.com/jquery.min.js"></script>
-<script src="js/fontawesome.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
+<!-- Swiper JS -->
 <script src="js/swiper.min.js"></script>
 
+<!-- Initialize Swiper -->
 <script>
-	/**스크롤이 설정한 높이 이상 내려갔을때 스타일추가하기**/
-	if (jQuery(window).width() > 0) {
-    jQuery(window).on("scroll",function(ev){
-        if(jQuery(window).scrollTop() > 150 ) { /**높이 픽셀 조정**/
-            jQuery('.menu_box').addClass('fixed');  /**위의 높이에서 .fixed 클래스를 추가합니다. 스타일에서 자유롭게 수치 조절 가능합니다.**/
+	var menuButton = document.querySelector('.menu-button');
+    var openMenu = function () {
+      swiper.slidePrev();
+    };
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      initialSlide: 1,
+      resistanceRatio: 0,
+      slideToClickedSlide: true,
+      on: {
+        slideChangeTransitionStart: function () {
+          var slider = this;
+          if (slider.activeIndex === 0) {
+            menuButton.classList.add('cross');
+            // required because of slideToClickedSlide
+            menuButton.removeEventListener('click', openMenu, true);
+          } else {
+            menuButton.classList.remove('cross');
+          }
         }
-        else{
-			jQuery('.menu_box').removeClass('fixed');
-        }
-        return false;
+        , slideChangeTransitionEnd: function () {
+          var slider = this;
+          if (slider.activeIndex === 1) {
+            menuButton.addEventListener('click', openMenu, true);
+          }
+        },
+      }
     });
-	}
-	
+</script>
+
+<script>
 	/**마우스 부드럽게 해당위치로 이동**/
 	$(function(){
 	   $('a[href^=#]').click(function() {
@@ -134,15 +113,6 @@
 		  return false;
 	   });
 	});
-</script>
-
-<script>
-    var mySwiper2 = new Swiper('#swiper-container2', {
-        watchSlidesProgress: true,
-        watchSlidesVisibility: true,
-        slidesPerView: 2
-
-    })
 </script>
 
 </body>
