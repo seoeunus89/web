@@ -1,27 +1,20 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>김포아트빌리지</title>
-
-<link rel="stylesheet" href="css/master.css">
-<link rel="stylesheet" href="css/reset.css">
-<link rel="stylesheet" href="css/swiper.min.css">
-
-<script src="http://code.jquery.com/jquery.min.js"></script>
-<!-- <style>
-*{list-style:none; margin:0; padding:0;}
-</style> -->
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>김포아트빌리지</title>
+	<link rel="stylesheet" href="css/master.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
 </head>
 
 <body>
 
 <div id="section01">
 	<div class="swiper-container">
-		<div class="swiper-wrapper">
+		<div class="swiper-wrapper slide">				
 			<div class="swiper-slide menu">
 				<ul class="navi navigation" id="nav">
 					<li><a href="#section01">김포아트빌리지</a></li>
@@ -31,92 +24,97 @@
 					<li><a href="#section05">오시는 길</a></li>
 				</ul>
 			</div>
-			
+
 			<div class="swiper-slide content">
 				<div class="menu-button">
 					<img src="img/logo.png" id="logo">
 				</div>
-				<div class="main-txt-box">
-					<div class="main_txt">
-						<p>ART VILLAGE</p>
-					</div>
-					<div class="sub_txt">
-						<p>전통문화예술을 품다. 아트빌리지</p>
-					</div>
-				</div>	
 			</div>
 		</div>
-	</div>	
+	</div>
+	<div class="main-txt-box">
+		<div class="main_txt">
+			<p>ART VILLAGE</p>
+		</div>
+		<div class="sub_txt">
+			<p>전통문화예술을 품다. 아트빌리지</p>
+		</div>
+	</div>
 </div>
 
-<div id="section02"> 
+	<div id="section02">
 
-</div>	
-<!-- <section02 -->
+	</div>
+	<!-- <section02 -->
 
-<div id="section03">
-</div>
+	<div id="section03">
+	</div>
 
-<!-- <section03 -->
+	<!-- <section03 -->
 
-<div id="section04"></div>
-<!-- <section04 -->
+	<div id="section04"></div>
+	<!-- <section04 -->
 
-<div id="section05"></div>
-<!-- <section05 -->
-
-
-<!-- JS -->
-<script src="js/swiper.min.js"></script>
+	<div id="section05"></div>
+	<!-- <section05 -->
 
 
-<!-- Initialize Swiper -->
-<script>
-	var menuButton = document.querySelector('.menu-button');
-    var openMenu = function () {
-      swiper.slidePrev();
-    };
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
-      initialSlide: 1,
-      resistanceRatio: 0,
-      slideToClickedSlide: true,
-      on: {
-        slideChangeTransitionStart: function () {
-          var slider = this;
-          if (slider.activeIndex === 0) {
-            menuButton.classList.add('cross');
-            // required because of slideToClickedSlide
-            menuButton.removeEventListener('click', openMenu, true);
-          } else {
-            menuButton.classList.remove('cross');
-          }
-        }
-        , slideChangeTransitionEnd: function () {
-          var slider = this;
-          if (slider.activeIndex === 1) {
-            menuButton.addEventListener('click', openMenu, true);
-          }
-        },
-      }
-    });
-</script>
+	<!-- JS -->
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 
-<script>
-	/**마우스 부드럽게 해당위치로 이동**/
-	$(function(){
-	   $('a[href^=#]').click(function() {
-		  var speed = 800;
-		  var href= $(this).attr("href");
-		  var target = $(href == "#" || href == "" ? 'html' : href);
-		  var position = target.offset().top;
-		  $('body,html').animate({scrollTop:position}, speed, 'swing');
-		  return false;
-	   });
-	});
-</script>
+
+
+	<!-- Initialize Swiper -->
+	<script>
+		var menuButton = document.querySelector('.menu-button');
+		var openMenu = function () {
+			swiper.slidePrev();
+		};
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 'auto',
+			initialSlide: 1,
+			resistanceRatio: 0,
+			slideToClickedSlide: true,
+			on: {
+				slideChangeTransitionStart: function () {
+					var slider = this;
+					if (slider.activeIndex === 0) {
+						menuButton.classList.add('cross');
+						// required because of slideToClickedSlide
+						menuButton.removeEventListener('click', openMenu, true);
+					} else {
+						menuButton.classList.remove('cross');
+					}
+				},
+				slideChangeTransitionEnd: function () {
+					var slider = this;
+					if (slider.activeIndex === 1) {
+						menuButton.addEventListener('click', openMenu, true);
+					}
+				},
+			}
+		});
+	</script>
+
+	<script>
+		/**마우스 부드럽게 해당위치로 이동**/
+		$(function () {
+			$('a[href^=#]').click(function () {
+				var speed = 800;
+				var href = $(this).attr("href");
+				var target = $(href == "#" || href == "" ? 'html' : href);
+				var position = target.offset().top;
+				$('body,html').animate({
+					scrollTop: position
+				}, speed, 'swing');
+				return false;
+			});
+		});
+	</script>
 
 
 
 </body>
+
 </html>
