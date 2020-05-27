@@ -1,10 +1,12 @@
-
-document.getElementById("btn-nav").onclick = function() {
-    myFunction()};
-
-function myFunction() {
-    document.getElementById("nav").classList.toggle("show");
-}
+setInterval(function(){
+    // setInterval(); 함수 반복 실행
+    $(".slide_box").delay("2500");
+    $(".slide_box").animate({marginTop: "-300px"}, "500");
+    $(".slide_box").delay("2500");
+    $(".slide_box").animate({marginTop: "-600px"}, "500");
+    $(".slide_box").delay("2500");
+    $(".slide_box").animate({marginTop: "0"}, "500");
+});
 
 
 
