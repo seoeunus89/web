@@ -5,6 +5,8 @@
   src: url('/font/LORENZA.woff2');
   src: url('/font/LORENZA.eot');} 
 
+@font-face { font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 
 li {
   list-style: none;
@@ -30,8 +32,9 @@ li {
 }
 
 .sub_txt{
+  font-family: RIDIBatang;
   font-size: 20px;
-  opacity: 0.7;
+  opacity: 0.5;
   color: #fff;
   padding-top: 40px;
   width: 100%;
@@ -171,55 +174,89 @@ position: fixed;
 #section02 {
   width: 100%;
   background: #fff;
-}
-
-.hanok-bg {
-  width: 100%;
-  padding-top: 10%;
-  padding-bottom: 5%;
-}
-
-.hanok-bg p {
-  color: #000000;
-  font-size: 30px;
-  text-align: center;
-}
-
-.hanok-img {
-  width: 70%;
+  height: 1000px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 50px;
-  
 }
 
-.hanok-img p{
-  display: flex;
-  padding-top: 50%
+.hanok-bg{
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 10%;
 }
 
-.img1{
-  width: 300px;
-  height: 300px;
-  background: url(../img/img1.jpg);
+  .hanok-title {
+    font-family: RIDIBatang;
+    color: #000000;
+    width: 100%;
+    text-align: center;
+  }
+
+  .hanok-title h1{
+    font-size: 50px;
+    text-align: center;
+    
+  }
+
+  .hanok-sub{
+    width: 100%;
+    display: block;
+    /* background: yellow; */
+  }
+
+    .hanok-img {
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 8%;
+      display: flex;
+      justify-content: space-between;
 }
 
-.img2{
-  width: 300px;
-  height: 300px;
-  background: url(../img/img2.jpg);
-}
-.img3{
-  width: 300px;
-  height: 300px;
-  background: url(../img/img3.jpg);
-}
-.img4{
-  width: 300px;
-  height: 300px;
-  background: url(../img/img4.jpg)
-}
+    .hanok-img >img {
+     width: 300px;
+     height: 300px;
+    }
+
+    .hanok-txt {
+      font-family: RIDIBatang;
+      letter-spacing: 0.4px;
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 3%;
+      display: flex;
+      justify-content: space-between;
+      /* background-color: chocolate; */
+    }
+
+    .hanok-txt> div h1{
+      padding-bottom: 8%;
+      font-size: 19px;
+      text-align: center;
+      line-height: 150%;
+    }
+
+    .hanok-txt> div p{
+      padding: 0 10%;
+      line-height: 120%;
+    }
+
+      .txt-box1{
+        width: 300px;
+        height: 200px;
+      }
+      .txt-box2{
+        width: 300px;
+        height: 200px;;
+      }
+      .txt-box3{
+        width: 300px;
+        height: 200px;
+      }
+      .txt-box4{
+        width: 300px;
+        height: 200px;
+      }
 
 
 #section03 {
