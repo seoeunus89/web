@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="css/master.css">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.css">
 </head>
 
 <body>
@@ -49,10 +50,10 @@
 		</div>
 		<div class="hanok-sub">
 			<div class="hanok-img">
-				<img src="img/img1.png" alt="img1">
-				<img src="img/img2.png" alt="img2">
-				<img src="img/img3.png" alt="img3">
-				<img src="img/img4.png" alt="img4">
+				<div data-wow-iteration="2" class="span3 wow swing center img1" style="visibility: visible; animation-iteration-count: 2; animation-name: swing;"><img src="img/img1.png" alt="img1"></div>
+				<div data-wow-iteration="2" class="span3 wow swing center img1" style="visibility: visible; animation-iteration-count: 2; animation-name: swing;"><img src="img/img2.png" alt="img1"></div>
+				<div data-wow-iteration="2" class="span3 wow swing center img1" style="visibility: visible; animation-iteration-count: 2; animation-name: swing;"><img src="img/img3.png" alt="img1"></div>
+				<div data-wow-iteration="2" class="span3 wow swing center img1" style="visibility: visible; animation-iteration-count: 2; animation-name: swing;"><img src="img/img4.png" alt="img1"></div>
 			</div>
 			<div class="hanok-txt">
 				<div class="txt-box1">
@@ -95,6 +96,7 @@
 	<!-- JS -->
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
 
 
 		
@@ -131,6 +133,8 @@
 	</script>
 
 	<script>
+
+	new WOW().init();
 
 		/**마우스 부드럽게 해당위치로 이동**/
 		$(function () {
