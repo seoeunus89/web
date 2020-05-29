@@ -259,11 +259,103 @@ position: fixed;
       }
 
 
+
+/* ----------------------------------------------------------- */
+
 #section03 {
   width: 100%;
+  background: url(../img/2page.jpg) top center no-repeat;
   height: 1000px;
-  background: powderblue;
+  margin: 0 auto;
 }
+
+.bg3 {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 10%;
+}
+
+.bg3-main{
+  display: flex;
+  position: relative;
+}
+
+
+  .bg3-title {
+    font-family: RIDIBatang;
+    color: #000000;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10%;
+  }
+
+  .bg3-title h1{
+    font-size: 50px;
+    text-align: center; 
+  }
+
+
+.bg3-img {
+  position: relative;
+}
+
+.bg3-txt {
+  font-family: RIDIBatang;
+  letter-spacing: 0.4px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 3%;
+  display: flex;
+  position: relative;
+}
+  
+  .bg3-txt> h1{
+    padding-bottom: 8%;
+    font-size: 19px;
+    text-align: center;
+    line-height: 150%;
+    padding-top: 20%;
+    padding-left: 10%;
+    color: #fff;
+  }
+
+  .bg3-txt> p{
+    padding: 0 5%;
+    line-height: 250%;
+    color: #fff;
+  }
+
+
+
+/* ----------------------------------------------------------- */
+
+    .slide_img ul{
+      position:relative;
+      height:500px;
+    }
+
+    .slide_img li{
+      position:absolute;
+      left:0;right:0;top:0;bottom:0;opacity:0;
+      animation:fade 10s infinite;
+    }
+    .slide_img li:nth-child(1){animation-delay:0s}
+    .slide_img li:nth-child(2){animation-delay:5s}
+    .slide_img li:nth-child(3){animation-delay:10s}
+
+    @keyframes fade {
+      0% {opacity:0;}
+      5% {opacity:1;}
+      25% {opacity:1;}
+      30% {opacity:0;}
+      100% {opacity:0;}
+    }
+  
+
+
+/* ----------------------------------------------------------- */
 
 
 #section04 {
@@ -275,13 +367,14 @@ position: fixed;
 #section05 {
   width: 100%;
   height: 1500px;
-  /* background: #fc0; */
+  background: #fc0;
 }
 
 .map{
   width: 100%;
   height: 500px;
 }
+
 .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
         
 .customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
