@@ -386,13 +386,13 @@ position: fixed;
 }
 
 .map{
-  width: 40%;
+  width: 50%;
   height: 500px;
   position: relative;
   background-color: lawngreen;
 }
 
-.road-txt{
+.road-txt p{
   height: 500px;
   display: flex;
   position: relative;
