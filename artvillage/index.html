@@ -14,7 +14,7 @@
 <body>
 
 <div id="section01">
-	<div class="swiper-container">
+	<div class="swiper-container swiper1">
 		<div class="swiper-wrapper show">				
 			<div class="swiper-slide menu">
 				<ul class="navi navigation" id="nav">
@@ -88,8 +88,12 @@
 		</div>
 		<div class="bg3-box">
 			<div class="bg3-main">
-				<div class="bg3-img">
-					<img src="img/slide1.png">
+				<div class="bg3-img slideshow">
+					<ul>
+						<li><img src="img/slide1.png"></li>
+						<li><img src="img/slide2.png"></li>
+						<li><img src="img/slide3.png"></li>				  
+					</ul>
 				</div>
 				<div class="bg3-txt">
 					<h1>창작스튜디오 둘러보기</h1>
@@ -101,8 +105,8 @@
 </div>
 <!-- <section03 -->
 
-<div id="section04"></div>
-
+<div id="section04">
+</div>
 
 <!-- <section04 -->
 
@@ -140,7 +144,7 @@
 		var openMenu = function () {
 			swiper.slidePrev();
 		};
-		var swiper = new Swiper('.swiper-container', {
+		var swiper = new Swiper('.swiper1', {
 			slidesPerView: 'auto',
 			initialSlide: 1,
 			resistanceRatio: 0,
@@ -232,6 +236,34 @@
 		yAnchor: 1 
 	});
 </script>
+
+<script>
+	const all = ele => document.querySelectorAll(ele)
+	const one = ele => document.querySelector(ele)
+	const slide = _ => {
+	  const wrap = one('.slideshow')
+	  const target = wrap.children[0]
+	  const len = target.children.length
+	  const liStyle = `
+		position:absolute;
+		left:0;right:0;top:0;bottom:0;transition:1s;opacity:0
+	  `
+	  target.style.cssText = `position:relative;`
+	  Array.from(target.children)
+	  .forEach(ele => ele.style.cssText = liStyle)
+	  target.children[0].style.opacity = 1
+	  let pos = 0
+	  setInterval(_ => {
+		target.children[pos].style.opacity = 0
+		pos = (pos + 1) % len 
+		target.children[pos].style.opacity = 1
+	  }, 2000)
+	}
+	window.onload = function () {
+	  slide()
+	}
+</script>
+	
 
 </body>
 
