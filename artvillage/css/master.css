@@ -378,6 +378,7 @@ position: fixed;
   width: 100%;
   text-align: center;
   padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .map-container{
@@ -385,15 +386,18 @@ position: fixed;
 }
 
 .map{
-  width: 50%;
+  width: 40%;
   height: 500px;
   position: relative;
+  background-color: lawngreen;
 }
 
 .road-txt{
-  width: 50%;
   height: 500px;
+  display: flex;
   position: relative;
+  width: 50%;
+  background-color: lightcoral;
 }
 
 
