@@ -380,10 +380,21 @@ position: fixed;
   padding-top: 10%;
 }
 
-.map{
+.map-container{
   width: 100%;
+}
+
+.map{
+  width: 50%;
   height: 500px;
 }
+
+.road-txt{
+  width: 50%;
+
+  height: 500px;
+}
+
 
 .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
         
