@@ -51,7 +51,7 @@ nav{
 .subNav ul{
     /* display: none; */
     width: 400px;
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(256,255,255,0.7);
     height: 180px;
     position: relative;
     z-index: 999;
