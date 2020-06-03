@@ -431,7 +431,7 @@ position: fixed;
 
 
 
-/* media *//
+/* media */
 @media (max-width: 576px){
   .hanok-txt{
     display: block;
