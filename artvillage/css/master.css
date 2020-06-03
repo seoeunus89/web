@@ -270,7 +270,6 @@ position: fixed;
 .bg3 {
   width: 80%;
   margin: 0 auto;
-  padding-top: 7%;
 }
 
     .bg3-title {
@@ -281,6 +280,7 @@ position: fixed;
       font-size: 50px;
       text-align: center; 
       margin-bottom: 15%;
+      padding-top: 12%;
     }
 
 
@@ -291,7 +291,6 @@ position: fixed;
 
   .bg3-img{
     width: 50%;
-    margin-bottom: 20%;
   }
 
 
@@ -301,6 +300,7 @@ position: fixed;
     letter-spacing: 0.4px;
     margin-left: -10%;
     text-align: center;
+    margin-bottom: 10%;
   }
     
     .bg3-txt> h1{
@@ -327,7 +327,6 @@ position: fixed;
 
   .bg4{
     width: 80%;
-    display: block;
     margin: 0 auto;
     align-items: center;
     padding-top: 10%;
@@ -533,7 +532,7 @@ position: fixed;
 @media (max-width: 768px){
   .hanok-txt{
     display: block;
-    margin: 5% 25%;
+    margin: 5% 15%;
   }
 
   .hanok-title{
@@ -595,7 +594,7 @@ position: fixed;
 
     .bg4-txt{
       width: 100%;
-      margin: 5% 15%;
+      margin: 5% 0%;
     }
 
       .bg4-txt h1{
