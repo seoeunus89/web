@@ -513,3 +513,110 @@ position: fixed;
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+  .hanok-txt{
+    display: block;
+    margin: 5% 25%;
+  }
+
+  .hanok-title{
+    margin-top: 8%;
+    margin-bottom: 10%;
+  }
+
+  .img1, .img2, .img3{
+    display: none;
+  }
+
+  .img4{
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+
+  #section03{
+    background-image: url("/img/2page.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+
+  .bg3-main{
+    display: block;
+  }
+
+    .bg3-title{
+      margin-top: 8%;
+      margin-bottom: 20%;
+    }
+
+      .bg3-txt{
+        margin: 0 auto;
+        display: block;
+        padding-top: 70%;
+        padding-bottom: 10%;
+        width: 100%
+      }
+
+      .bg3-img{
+        width: 100%;
+      }
+
+#section04{
+  background-image: url("/img/3page.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+  .content4{
+    display: block;
+  }
+
+    .bg4-title{
+      margin-top: 8%;
+      margin-bottom: 5%;
+    }
+
+    .bg4-txt{
+      width: 100%;
+      margin: 5% 15%;
+    }
+
+      .bg4-txt h1{
+        font-size: 20px;
+        margin-left: 9%;
+      }
+
+    .bg4-img{
+      width: 100%;
+      margin-left: 30%;
+    }
+
+    .map-txt{
+      margin-top: 8%;
+      margin-bottom: 15%;
+    }
+    .road-txt{
+      width: 100%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+      margin-left: 2%;
+    }
+}
+
