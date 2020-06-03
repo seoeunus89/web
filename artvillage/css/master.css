@@ -454,20 +454,26 @@ position: fixed;
   }
 
 
+  .bg3-main{
+    display: block;
+  }
+
     .bg3-title{
       margin-top: 8%;
       margin-bottom: 20%;
     }
 
-    .slidee{
-      display: block;
-       
-    }
+      .bg3-txt{
+        margin: 0 auto;
+        display: block;
+        padding-top: 70%;
+        padding-bottom: 10%;
+        width: 100%
+      }
 
-    .bg3-txt{
-      display: block;
-      margin: 0 auto;
-    }
+      .bg3-img{
+        width: 100%;
+      }
 
 
   .content4{
