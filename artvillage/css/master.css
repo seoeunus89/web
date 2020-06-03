@@ -550,7 +550,7 @@ position: fixed;
   }
 
   #section03{
-    background-image: url("/img/2page.jpg");
+    background-image: url("../img/2page.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -578,7 +578,7 @@ position: fixed;
       }
 
 #section04{
-  background-image: url("/img/3page.jpg");
+  background-image: url("../img/3page.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
