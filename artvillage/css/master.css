@@ -531,7 +531,7 @@ position: fixed;
 @media (max-width: 768px){
   .hanok-txt{
     display: block;
-    margin: 5% 15%;
+    margin: 0 auto;
   }
 
   .hanok-title{
