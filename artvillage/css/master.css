@@ -7,8 +7,13 @@
 
 @font-face { font-family: 'RIDIBatang'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff'); font-weight: normal; font-style: normal; }
 
+@font-face { font-family: 'SangSangRock'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/SangSangRockOTF.woff') format('woff'); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'BMEULJIRO'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'MapoGoldenPier'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css); .nanumgothic * { font-family: 'Nanum Gothic', sans-serif; }
+
+@font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
 
 li {
   list-style: none;
@@ -16,41 +21,37 @@ li {
 
 #section01 {
   width: 100%;
-  background: url(../img/1page.jpg) top center no-repeat;
-}
-
-.main_txt{
-  font-family: LORENZA;
-  letter-spacing: -2px;
-  opacity: 0.3;
-  text-shadow: 0 0.3px 0 rgba(0,0,0,0.5);
-  color: #fff;
-  width: 100%;
-}
-
-.main_txt p{
-  font-size: 10vw;
-  text-align: center;
-}
-
-.sub_txt{
-  font-family: BMEULJIRO;
-  font-size: 25px;
-  opacity: 0.5;
-  color: #fff;
-  padding-top: 30px;
-
-  width: 100%;
-  text-align: center;
+  background: url(../img/1bg.jpg) top center no-repeat;
 }
 
 
+  .main-txt-box{
+    position: relative;
+    padding-top: 18%;
+    padding-bottom: 27%;
+  }
+    .main_txt{
+      font-family: LORENZA;
+      letter-spacing: -2px;
+      opacity: 0.2;
+      text-shadow: 0 0.3px 0 rgba(0,0,0,0.5);
+      color: #fff;
+      width: 100%;
+    }
+      .main_txt p{
+        font-size: 9vw;
+        text-align: center;
+      }
 
-.main-txt-box{
-  position: relative;
-  padding-top: 20%;
-  padding-bottom: 18%;
-}
+    .sub_txt{
+      font-family: SangSangRock;
+      font-size: 30px;
+      opacity: 0.8;
+      color: #fff;
+      padding-top: 35px;
+      width: 100%;
+      text-align: center;
+    }
 
 @media(max-width:767px){
   .main-txt-box{
@@ -60,8 +61,7 @@ li {
 }
 
 
-/* --------------------------------------------------------- */
-
+/* -------------------------------------------------------------- */
 
 .swiper-slide li a {
   text-decoration: none;
@@ -70,9 +70,6 @@ li {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 16px;
 }
-
-/* -------------------------------------------------------------- */
-
 
 /**메뉴부분 마우스 오버시 색상 **/
 .swiper-slide li a:hover {
@@ -105,11 +102,10 @@ li {
   color: #fc0;
 }
 
-/* ---------------------------------------------------------- */
-.swiper1 {
-  width: 100%;
-  /* height: 1000px; */
 
+
+.swiper-container{
+  width: 100%;
 }
 
 .swiper-slide{
@@ -135,64 +131,66 @@ position: fixed;
   align-items: center;
 }
 
-.menu {
-  min-width: 100px;
-  width: 70%;
-  max-width: 320px;
-  background-color:rgba(0, 0, 0, 0.5);
-}
+
+  .menu {
+    min-width: 100px;
+    width: 70%;
+    max-width: 320px;
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+
+  .menu-button {
+    position: absolute;
+    top: 0px; 
+    left: 0px;
+    padding: 15px;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
 
 
-.menu-button {
-  position: absolute;
-  top: 0px; 
-  left: 0px;
-  padding: 15px;
-  cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
+    #logo {
+      display: block;
+      width: 80px;
+      margin: 10px auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 10px;
+      -webkit-transition: .3s;
+      transition: .3s;
+    }
 
 
-#logo {
-  display: block;
-  width: 80px;
-  margin: 10px auto;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
-  -webkit-transition: .3s;
-  transition: .3s;
-}
+    .menu-button:hover #logo {
+      -webkit-transform: translateY(10px) rotate(-30deg);
+      -ms-transform: translateY(10px) rotate(-30deg);
+      transform: translateY(10px) rotate(-30deg);
+    }
 
 
-.menu-button:hover #logo {
-  -webkit-transform: translateY(10px) rotate(-30deg);
-  -ms-transform: translateY(10px) rotate(-30deg);
-  transform: translateY(10px) rotate(-30deg);
-}
-
+    
 /* ------------------------------------------------------------ */
 
 
 #section02 {
   width: 100%;
-  background: #fff;
+  background: url(../img/2bg.jpg) top center no-repeat;
   margin: 0 auto;
 }
 
-.hanok-bg{
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-  align-items: center;
-  padding-top: 10%;
-}
+  .hanok-bg{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 10%;
+  }
 
   .hanok-title {
-    font-family: BMEULJIRO;
+    font-family: SangSangRock;
     color: #181818;
     width: 100%;
-    font-size: 50px;
+    font-size: 60px;
     text-align: center; 
   }
 
@@ -205,7 +203,7 @@ position: fixed;
     .hanok-img {
       width: 100%;
       margin: 0 auto;
-      padding-top: 8%;
+      padding-top: 6%;
       display: flex;
       justify-content: space-between;
 }
@@ -214,30 +212,31 @@ position: fixed;
      width: 25%
     }
 
-    .hanok-txt {
-      font-family: RIDIBatang;
-      letter-spacing: 0.4px;
-      width: 100%;
-      margin: 0 auto;
-      padding-top: 3%;
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 10%;
-    }
-
-      .hanok-txt> div h1{
-        padding-bottom: 8%;
-        font-size: 20px;
-        text-align: center;
-        line-height: 150%;
-        font-weight: bold;
-        color: rgb(143, 82, 2);
+      .hanok-txt {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14%;
       }
 
-      .hanok-txt> div p{
-        padding: 0 auto;
-        line-height: 120%;
-      }
+        .hanok-txt> div h1{
+          padding-bottom: 8%;
+          font-size: 20px;
+          font-weight: bold;
+          text-align: center;
+          line-height: 150%;
+          letter-spacing: 0.4px;
+          color: rgb(143, 2, 2);
+          font-family: GmarketSansMedium;
+        }
+
+        .hanok-txt> div p{
+          font-family: RIDIBatang;
+          padding: 0 auto;
+          line-height: 140%;
+        }
 
       
         .txt-box1{
@@ -261,59 +260,74 @@ position: fixed;
 
 /* ----------------------------------------------------------- */
 
+
+
 #section03 {
   width: 100%;
-  background: url(../img/2page.jpg) top center no-repeat;
+  background: #fff;
   margin: 0 auto;
 }
 
 .bg3 {
   width: 80%;
+  display: block;
   margin: 0 auto;
+  align-items: center;
+  padding-top: 10%;
 }
 
-    .bg3-title {
-      font-family: BMEULJIRO;
-      width: 100%;
-      text-align: center;
-      color: #181818;
-      font-size: 50px;
-      text-align: center; 
-      margin-bottom: 15%;
-      padding-top: 12%;
-    }
-
-
-.bg3-main{
-  display: flex;
-  width: 100%;
-}
-
-  .bg3-img{
-    width: 50%;
+  .bg3-title {
+    font-family: SangSangRock;
+    color: #181818;
+    width: 100%;
+    font-size: 60px;
+    text-align: center; 
   }
 
-
-  .bg3-txt {
-    width: 50%;
-    font-family: RIDIBatang;
-    letter-spacing: 0.4px;
-    margin-left: -10%;
-    text-align: center;
-    margin-bottom: 10%;
+  .bg3-box{
+    width: 100%;
+    display: block;
   }
-    
-    .bg3-txt> h1{
-      font-size: 23px;
-      color: #fff;
-      padding-bottom: 7%;
-    }
 
-    .bg3-txt> p{
-      line-height: 250%;
-      color: #fff;
+    .bg3-main{
+      display: block;
       width: 100%;
     }
+
+      .bg3-slide{
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 6%;
+        padding-bottom: 35%;
+        display: block;
+      }
+
+
+      .bg3-txt{
+        width: 100%;
+        font-family: RIDIBatang;
+        letter-spacing: 0.4px;
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        padding-bottom: 10%;
+      }
+      
+      
+        #btn_group button{
+          padding-top: 50%;
+          border: 1.4px solid #181818;
+          background-color: rgba(0,0,0,0); 
+          color: #181818;
+          padding: 8px;
+          font-family: GmarketSansMedium;
+          font-weight: bold;
+          font-size: 15px;
+        }
+
+          #bg3_btn1, #bg3_btn2, #bg3_btn3, #bg3_btn4, #bg3_btn5, #bg3_btn6, #bg3_btn7, #bg3_btn8, #bg3_btn9{
+            border-radius: 5px; 
+          }
 
 
 /* ------------------------------------------------------------- */
@@ -321,11 +335,11 @@ position: fixed;
 
 #section04 {
   width: 100%;
-  background: url(../img/3page.jpg) top center no-repeat;
-
+  background: url(../img/3bg.jpg) top center no-repeat;
+  margin: 0 auto;
 }
 
-  .bg4{
+  .bg4 {
     width: 80%;
     margin: 0 auto;
     align-items: center;
@@ -333,88 +347,106 @@ position: fixed;
   }
 
     .bg4-title {
-      font-family: BMEULJIRO;
+      font-family: SangSangRock;
       color: #181818;
       width: 100%;
-      font-size: 50px;
-      text-align: center; 
-      padding-bottom: 7%;
+      font-size: 60px;
+      text-align: center;
     }
 
     .content4{
       width: 100%;
       display: flex;
-      padding-bottom: 20%;
+      padding-top: 7%;
+      padding-bottom: 16%;
+
     }
 
       .bg4-txt{
-        width: 50%;
-        font-family: RIDIBatang;
+        width: 40%;
+        font-family: GmarketSansMedium;
         margin-left: 20%;
+        background: rgba(0, 0, 0, 0.5);
       }
 
           .bg4-txt> h1{
             font-size: 23px;
             font-weight: bold;
-            color: rgb(238, 34, 34);
-            padding-bottom: 8%;
+            color: #fff;
+            padding: 10% 10% 2% 22%;
           }  
 
           .bg4-txt> p{
-            padding: 0 5%;
             line-height: 250%;
-            color: #000
+            color: #ffffff;
+            padding: 5% 10%;
           }
 
-          .bg4-img{
-              width: 50%;
-            }
+      .bg4-img{
+        width: 40%;
+      }
 
-          .bg4-img img{
-            width: 40%;
-          }
+        .bg4-img img{
+          width: 40%;
+        }
 
     
 
 /* ------------------------------------------------------------ */
+
+
+
 #section05 {
   width: 100%;
-  background: #fff
-}
-
-.map-txt{
-  font-size: 50px;
-  font-family: BMEULJIRO;
-  color: #181818;
-  width: 100%;
-  text-align: center;
-  padding-top: 10%;
-  padding-bottom: 7%;
-}
-
-.map-container{
-  width: 100%;
-}
-
-.map{
-  width: 100%;
-  height: 450px;
-  position: center;
-  background-color: #fff;
-}
-
-.road-txt {
-  align-items: center;
-  font-family: RIDIBatang;
-  letter-spacing: 0.4px;
-  width: 100%;
+  background: url(../img/4bg.jpg) top center no-repeat;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  line-height: 170%;
-  padding-top: 2%;
-  padding-bottom: 3%;
 }
+
+  .bg5 {
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
+    padding-top: 10%;
+  }
+
+
+  .bg5-title{
+    font-family: SangSangRock;
+    color: #181818;
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    padding-bottom: 7%;
+  }
+
+    .map-container{
+      width: 100%;
+      display: flex;
+      padding-bottom: 16%;
+    }
+
+      .map{
+        background: rosybrown;
+        width: 65%;
+        height: 500px;
+      }
+
+      .bg5-txt{
+        width: 35%;
+        font-family: GmarketSansMedium;
+        background: #fff;
+        line-height: 200%;
+        letter-spacing: 0.4px;
+        margin: 0 auto;
+        padding-top: 5%;
+        padding-left: 3%;
+      }
+
+        .bg5-txt h1{
+          color: #964c25;
+          font-size: 18px;
+        }
+
 
 
 .customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
@@ -532,6 +564,7 @@ position: fixed;
   .hanok-txt{
     display: block;
     margin: 0 auto;
+    
   }
 
   .hanok-title{
