@@ -11,13 +11,14 @@
 
 @font-face { font-family: 'MapoGoldenPier'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoGoldenPierA.woff') format('woff'); font-weight: normal; font-style: normal; }
 
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css); .nanumgothic * { font-family: 'Nanum Gothic', sans-serif; }
-
 @font-face { font-family: 'GmarketSansMedium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff'); font-weight: normal; font-style: normal; }
+
 
 li {
   list-style: none;
 }
+
+
 
 #section01 {
   width: 100%;
@@ -170,6 +171,7 @@ position: fixed;
 
     
 /* ------------------------------------------------------------ */
+
 
 
 #section02 {
@@ -330,7 +332,9 @@ position: fixed;
           }
 
 
+
 /* ------------------------------------------------------------- */
+
 
 
 #section04 {
@@ -432,9 +436,9 @@ position: fixed;
       }
 
       .bg5-txt{
-        width: 35%;
+        width: 32%;
         font-family: GmarketSansMedium;
-        background: #fff;
+        background: rgba(255, 255, 255, 0.644);
         line-height: 200%;
         letter-spacing: 0.4px;
         margin: 0 auto;
