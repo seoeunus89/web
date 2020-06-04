@@ -110,7 +110,7 @@ li {
 }
 
 .swiper-slide{
-position: fixed;
+  position: fixed;
 }
 
 .swiper-slide {
@@ -468,10 +468,42 @@ position: fixed;
 
 /* media */
 @media (max-width: 576px){
-  .hanok-txt{
-    display: block;
+
+  #section01{
+    background-image: url("../img/1bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  #section02 {
+    width: 100%;
+    background: url(../img/22bg.png) top center no-repeat;
     margin: 0 auto;
   }
+
+  .hanok-txt{
+    display: block;
+  }
+
+    .txt-box1 {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .txt-box2 {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .txt-box3 {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .txt-box4 {
+      display: block;
+      margin: 0 auto;
+    }
 
   .hanok-title{
     margin-top: 8%;
@@ -481,6 +513,7 @@ position: fixed;
   .img1, .img2, .img3{
     display: none;
   }
+
 
   .img4{
     margin: 0 auto;
@@ -564,7 +597,7 @@ position: fixed;
 
 
 
-@media (max-width: 768px){
+/* @media (max-width: 768px){
   .hanok-txt{
     display: block;
     margin: 0 auto;
@@ -653,5 +686,5 @@ position: fixed;
       margin-bottom: 10%;
       margin-left: 2%;
     }
-}
+} */
 
