@@ -1,0 +1,137 @@
+@font-face { font-family: 'NEXON Lv1 Gothic OTF'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5{
+    margin: 0;
+    padding: 0;
+}
+
+.section01{
+    width: 100%;
+    height: 100vh;
+}
+.main-bg{
+    background: url('../images/sec01.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.logo{
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-bottom: 10%;
+}
+.logo img{
+    width: 12%;
+}
+
+.con{
+    background-color: #000;
+}
+
+
+.title>h1{
+    margin-bottom: 2%;
+    font-family: NEXON Lv1 Gothic OTF;
+}
+
+.border1{
+    border: 1px solid gainsboro;
+    height: 20vh;
+    box-sizing: border-box;
+}
+.border2{
+    border: 1px solid gainsboro;
+    height: 20vh;
+    box-sizing: border-box;
+}
+.border3{
+    border: 1px solid gainsboro;
+    height: 20vh;
+    box-sizing: border-box;
+}
+.border4{
+    border: 1px solid gainsboro;
+    height: 20vh;
+    box-sizing: border-box;
+}
+/* --------------------------------------------------------------- */
+
+
+.section02{
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.colorbox{
+    font-family: NEXON Lv1 Gothic OTF;
+    margin-top: 5%;
+}
+.colorbox>h4{
+    margin-top: 3%;
+}
+
+.wc{
+    background-color: #f2f4f3;
+}
+.sg{
+    background: #444746;
+}
+.mc{
+    background-color: #172032;
+}
+.tb{
+    background: black;
+}
+.sb{
+    background-color: #351416;
+}
+.rf{
+    background: #25312f;
+}
+
+.tap-img{
+    margin-top: 4%;
+}
+.tap-img>div{
+    position: relative;
+}
+
+#sg,#mc,#tb,#sb,#rf{
+    display: none;
+}
+
+.sgtxt, .mctxt, .tbtxt, .sbtxt, .rftxt{
+    display: none;
+}
+
+.tab-car-img img{
+    width: 80%;
+}
+
+.color-text>ul{
+    display: flex;
+}
+.color-text>ul>li{
+    width: 50px;
+    height: 50px;
+    margin: 10px 5px;
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+.text-content>ul>li{
+    list-style: none;
+    margin-top: 6%;
+    font-family: NEXON Lv1 Gothic OTF;
+}
+
