@@ -102,4 +102,46 @@ $(function(){
 
 
 
+$(function(){
+    $('.right1 > img:gt(0)').hide();
+    setInterval(function(){    
+        $('.right1 > img:first')
+        .fadeOut('slow')
+        .next()
+        .fadeIn('slow')
+        .end()
+        .appendTo('.right1');
+    },5000);  
+});
+
+$(function(){
+    $('.right3 > img:gt(0)').hide();
+    setInterval(function(){    
+        $('.right3 > img:first')
+        .fadeOut('slow')
+        .next()
+        .fadeIn('slow')
+        .end()
+        .appendTo('.right3');
+    },5000);  
+});
+
+$(function(){
+    $('.right4 > img:gt(0)').hide();
+    setInterval(function(){    
+        $('.right4 > img:first')
+        .fadeOut('slow')
+        .next()
+        .fadeIn('slow')
+        .end()
+        .appendTo('.right4');
+    },5000);  
+});
+
+
+
+
+
+
+
 
